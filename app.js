@@ -51,5 +51,4 @@ function copiarTexto(){
         navigator.clipboard.writeText(textoArmazenado);
         const campoNome = document.querySelector('#visualizar-texto');
         campoNome.value  = '';
-
 }
