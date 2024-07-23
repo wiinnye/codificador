@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Codificador</title>
+</head>
+<body>
+    <main class="container">
+        <div class="header-logo">
+            <img class='logo' src="./img/Logo.png" alt="logo"/>
+        </div>
+
+        <div class="div-botoes">  
+            <div class="div-texto">
+                <input type='text' id='texto-inserido' placeholder="Digite seu texto" />
+            </div>
+            <div class="info">
+                    <span class='aviso'>Apenas letras minúsculas e sem acento.</span>
+            </div>
+            <div class="botoes">
+                    <button class="criptografar" onclick="criptografar()" >Criptografar</button>
+                    <button class="descriptografar" onclick="descriptografar()">Descriptografar</button> 
+            </div>
+        </div>
+        
+    <div class="div-resultado">
+        <div id="resultado">
+                <img class="image-mensagem" src="./img/nenhumamensagem.png" alt="foto ilustrativa de nenhuma mensagem">
+                <img class="texto-mensagem" src="./img/mensagem.png" alt="texto de nenhuma mensagem ">
+        </div>
+
+        <div id="resultado-texto">
+            <textarea id='visualizar-texto' name="textarea" rows="20" cols="30" placeholder="Nenhuma Mensagem..."></textarea>
+            <button id="botao-copiar" onclick="copiarTexto()">Copiar</button>
+        </div>
+    </div>
+
+    </main>
+    <footer>
+        <span>Desenvolvido por Winnye D. Souza</span>
+    </footer>
+    <script src="./app.js" defer></script>
+</body>
+</html>
