@@ -9,7 +9,7 @@
 <body>
     <main class="container">
         <div class="header-logo">
-            <img class='logo' src="./img/Logo.png" alt="logo"/>
+            <img class='logo' src="./img/cadeado.png" alt="logo"/>
         </div>
 
         <div class="div-botoes">  
@@ -17,7 +17,8 @@
                 <input type='text' id='texto-inserido' placeholder="Digite seu texto" />
             </div>
             <div class="info">
-                    <span class='aviso'>Apenas letras minúsculas e sem acento.</span>
+                <img class='aviso-img' src="./img/bi_exclamation-circle-fill.png" alt="aviso">
+                <span class='aviso'>Apenas letras minúsculas e sem acento.</span>
             </div>
             <div class="botoes">
                     <button class="criptografar" onclick="criptografar()" >Criptografar</button>
@@ -27,13 +28,17 @@
         
     <div class="div-resultado">
         <div id="resultado">
-                <img class="image-mensagem" src="./img/nenhumamensagem.png" alt="foto ilustrativa de nenhuma mensagem">
+                <img class="image-mensagem" src="./img/search-removebg-preview.png" alt="foto ilustrativa de nenhuma mensagem">
                 <img class="texto-mensagem" src="./img/mensagem.png" alt="texto de nenhuma mensagem ">
         </div>
 
         <div id="resultado-texto">
-            <textarea id='visualizar-texto' name="textarea" rows="20" cols="30" placeholder="Nenhuma Mensagem..."></textarea>
-            <button id="botao-copiar" onclick="copiarTexto()">Copiar</button>
+            <div>
+                <textarea id='visualizar-texto' name="textarea" rows="20" cols="30" placeholder="Nenhuma Mensagem..."></textarea>
+            </div>
+            <div class='div-botao-copiar'>
+                <button id="botao-copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
         </div>
     </div>
 
